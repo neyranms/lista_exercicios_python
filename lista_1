@@ -1,0 +1,779 @@
+Exercícios de Fixação 
+
+1) fazer um programa em Python que calcule a área de um quadrado
+
+x= input("informe o valor do lado do quadrado:")
+x= int(x)
+def quadrado(n):    
+    return n**2
+a= quadrado(x)
+print("o valor da área do quadrado é:",a)
+
+2) fazer um programa em Python que calcule o perímetro de um quadrado
+
+x= input("informe o valor do lado do quadrado:")
+x= int(x)
+def perimetro(n):    
+    return n*4
+a= perimetro(x)
+print("o valor do perimetro do quadrado é:",a)
+
+3) fazer um programa em Python que calcule a área de um retângulo
+
+x= input("informe o valor da base do retângulo:")
+x= int(x)
+y= input("informe o valor da altura do retângulo:")
+y= int(y)
+def arearetangulo(n):    
+    return x*y
+a= arearetangulo(x*y)
+print("o valor da área do retângulo é:",a)
+
+4) fazer um programa em Python que calcule o perímetro de um retângulo
+
+x= input("informe o valor da base do retângulo:")
+x= int(x)
+y= input("informe o valor da altura do retângulo:")
+y= int(y)
+def perimetroretangulo(n):    
+    return 2*(x+y)
+a= perimetroretangulo(x*y)
+print("o valor do perimetro do retângulo é:",a)
+
+5) fazer um programa em Python que, ao serem dados dois números, 
+mostre a soma, a subtração, a divisão, o produto e a potência do primeiro pelo segundo.
+
+x= input("informe um valor inteiro:")
+x= int(x)
+y= input("informe outro valor inteiro:")
+y= int(y)
+print("o valor da soma dos valores é:",x+y)
+print("o valor da subtração dos valores é:",x-y)
+print("o valor da divisão dos valores é:",x/y)
+print("o valor do produto dos valores é:",x*y)
+print("o valor da potência do primeiro valor pelo segundo é:",x**y)
+
+6) fazer um programa em Python que mostre o resultado da seguinte expressão: ((x+5)*y)-z
+
+x= input("informe um valor inteiro para X:")
+x= int(x)
+y= input("informe um valor inteiro para Y:")
+y= int(y)
+z= input("informe um valor inteiro para Z:")
+z= int(z)
+print("o resultado da expressão ((x+5)*y)-z é:",((x+5)*y)-z)
+
+
+
+import datetime
+
+nome = input ("Como se chama? ")
+ano = eval (input ("Nasceu em que ano? "))
+mes = eval (input ("Nasceu em que mês? "))
+dia = eval (input ("Nasceu em que dia? "))
+data_atual = date.today()
+print(data_atual)
+dataNasc = datetime.date(ano, mes, dia)
+
+diferenca = (data_atual - dataNasc)
+rslt = (diferenca.days / 365.25)
+
+if rslt>=18:  
+    print("pode votar")
+else:
+    print("não pode votar")
+
+
+
+from datetime import date
+
+data_atual = date.today()
+print(data_atual)
+
+date.tm_month()
+
+import datetime
+mydate = datetime.datetime.now()
+mydate.strftime("%B")
+
+Tarefa Aula 01 - Iniciando em Python
+Aluno: Neyran Victor Melo da Silva
+
+Algoritmos - Lista de Exercícios II – Seqüência e Condicional 
+
+1.	Faça um algoritmo para informar se uma pessoa e maior de idade. 
+
+x= input("informe o valor da idade:")
+x= int(x)
+if x >= 18
+print("o aluno é maior de idade:")
+print(“o aluno é menor de idade”)
+
+2.	Faça um algoritmo que mostre o resultado da expressão: (( x – 5) * y) – z. 
+
+x= input("informe um valor inteiro para X:")
+x= int(x)
+y= input("informe um valor inteiro para Y:")
+y= int(y)
+z= input("informe um valor inteiro para Z:")
+z= int(z)
+print("o resultado da expressão ((x-5)*y)-z é:",((x-5)*y)-z)
+
+3.	Elabore um algoritmo que leia um número, e se ele for maior do que 20, escreva a metade desse número, caso contrário escreva o próprio número. 
+
+x= input("informe um valor inteiro:")
+x= int(x)
+if x>20:
+    print(x/2)
+else:
+    print(x)
+
+4.	Faça um algoritmo que leia o nome e a idade de duas pessoas e mostre a soma das idades. 
+
+x= input("informe a idade da primeira pessoa:")
+x= int(x)
+y= input("informe a idade da segunda pessoa:")
+y= int(y)
+print("a soma das idades é: ",x+y)
+
+5.	Elabore um algoritmo que leia dois valores, calcule e apresente a divisão do maior pelo menor. 
+
+x= input("informe a idade da primeira pessoa:")
+x= int(x)
+y= input("informe a idade da segunda pessoa:")
+y= int(y)
+if x>y:
+    print("a divisão de x/y é:",x/y)  
+else:
+    print("a divisão de y/x é: ",y/x)
+
+
+6.	Escreva um algoritmo que armazene o valor 3 em uma variável X e o valor 6 em uma variável Y. A seguir (utilizando apenas atribuições entre variáveis) troque os seus conteúdos fazendo com que o valor que está em X passe para Y e vice-versa. Ao final, escrever os valores que ficaram armazenados nas variáveis. 
+
+x= 3
+y= 6
+a=x
+x=y
+y=a
+print("o valor de x é:",x)
+print("o valor de y é:",y)
+
+7.	Faça um algoritmo para receber um valor e escrever se é “positivo” ou “negativo” (considere o valor zero como positivo). 
+
+x= input("informe um valor inteiro")
+x= int(x)
+if x<0:
+    print("o valor é negativo")
+else:
+    print("o valor é positivo")
+
+8.	Faça um algoritmo que receba dois números e apresente o menor valor 
+
+x= input("informe um valor inteiro")
+x= int(x)
+y= input("informe outro valor inteiro")
+y= int(y)
+if x>y:
+    print("o menor valor é y:",y)
+elif x==y:
+    print("x e y são iguais:", "x=",x, "y=",y )
+else:
+    print("o menor valor é x=",x)
+
+9.	Elabore um algoritmo que leia um número e, se ele for positivo, apresente a metade desse número, caso contrário apresente o número ao quadrado. 
+
+x= input("informe um valor inteiro")
+x= int(x)
+if x>0:
+    print("a metade do valor é:",x/2)
+else:
+    print("o valor ao quadrado é:",x**2)
+
+
+10.	Elabore um algoritmo que leia um valor e escrever a mensagem É MAIOR QUE 10! se o valor lido for maior que 10, caso contrário escrever NÃO É MAIOR QUE 10! 
+
+x= input("informe um valor inteiro")
+x= int(x)
+if x>10:
+    print("o maior que 10")
+else:
+    print("o valor não é maior que 10")
+
+
+11. Elabore um algoritmo que leia um valor e escrever se é “positivo”, “negativo” ou “zero”. 
+
+x= input("informe um valor inteiro")
+x= int(x)
+if x>0:
+    print("o valor é positivo")
+elif x==0:
+    print("o valor é zero" )
+else:
+    print("o valor é negativo")
+
+
+12.	Faça um algoritmo que receba quatro notas de um aluno, calcule e apresente a média aritmética das notas e a mensagem “aprovado” ou “reprovado”, considerando para aprovação média 8,0. 
+
+from statistics import mean
+x= input("informe um valor inteiro")
+x= int(x)
+y= input("informe outro valor inteiro")
+y= int(y)
+z= input("informe um valor inteiro")
+z= int(z)
+a= input("informe outro valor inteiro")
+a= int(a)
+b=[x,y,z,a]
+c=mean(b)
+if c>=8:
+    print("aprovado")
+else:
+    print("reprovado")
+
+13.	Faça um algoritmo que leia três valores (considere que não serão informados valores iguais) e apresente o maior deles. 
+
+x=input()
+x=int(x)
+y=input()
+y=int(y)
+z=input()
+z=int(z)
+a=[x,y,z]
+b=max(a)
+print("o maior valor é:",b)
+
+14.	As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem compradas pelo menos 12. Escreva um algoritmo que leia o número de maçãs compradas, calcule e escreva o custo total da compra. 
+
+x=input("digite o valor de maçãs desejadas:")
+x=int(x)
+if x>=12:
+    print("o valor a pagar é: R$",x)
+else:
+    a=x*1.3
+    print("o valor a pagar é: R$",a)
+
+15.	A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas). 
+
+x= input("informe o numero de horas trabalhadas no mês")
+x= int(x)
+y= input("informe o valor do salário por hora")
+y= float(y)
+
+if x>160:
+    s=((160*y)+((x-160)*0.5))    
+    print("o salário total do funcionário é: R$",s)
+elif x==160:
+    s=160*y
+    print("o salário total do funcionário é: R$",s)
+else:
+    print("o salário deverá ser decrescido")
+
+16.	Faça um algoritmo leia o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu). 
+
+import datetime
+
+nome = input ("Como se chama? ")
+ano = eval (input ("Nasceu em que ano? "))
+mes = eval (input ("Nasceu em que mês? "))
+dia = eval (input ("Nasceu em que dia? "))
+data_atual = date.today()
+print(data_atual)
+dataNasc = datetime.date(ano, mes, dia)
+
+diferenca = (data_atual - dataNasc)
+rslt = (diferenca.days / 365.25)
+
+if rslt>=18:  
+    print("pode votar")
+else:
+    print("não pode votar")
+
+
+
+
+17.	O sistema de avaliação de uma determinada disciplina é composto por três provas. A primeira prova tem peso 2, a segunda tem peso 3 e a terceira tem peso 5. Considerando que a média para aprovação é 9.0, faça um algoritmo para calcular a média final de um aluno desta disciplina e dizer se o aluno foi aprovado ou não. 
+
+from statistics import mean
+x= input("informe um valor")
+x= float(x)*0.2
+y= input("informe outro valor")
+y= float(y)*0.3
+z= input("informe um valor")
+z= float(z)*0.5
+a=x+y+z
+
+if a>=9:
+	print("o aluno foi aprovado")
+else:
+	print("o aluno foi reprovado")
+
+
+
+18.	Faça um algoritmo que leia “três valores” (considere que não serão informados valores iguais), calcule e escreva a soma dos dois maiores. 
+
+from statistics import mean
+x= input("informe um valor inteiro")
+x= int(x)
+y= input("informe outro valor inteiro")
+y= int(y)
+z= input("informe um valor inteiro")
+z=int(z)
+
+if x>y>z	
+	a=x+y	
+	print("a soma dos maiores números é:",a)
+elif y>x>z
+	a=x+y
+	print("a soma dos maiores números é:",a)
+
+elif z>y>x
+	a=z+y
+	print("a soma dos maiores números é:",a)
+else
+	a=z+x
+	print("a soma dos maiores números é:",a)
+
+19.	Escreva um algoritmo que leia um número inteiro e escreva se é múltiplo de 9. 
+
+from statistics import mean
+x= input("informe um valor inteiro")
+x= int(x)
+y=9
+
+if x % y == 0:
+    print('é múltiplo')
+else:
+    print('não é múltiplo')
+
+20.	Faça um algoritmo que coloque três valores em ordem crescente 
+
+numeros = ['7', '3', '200000']     
+numeros.sort(key=int)
+print(numeros)
+
+21. Elabore um algoritmo que leia o salário de uma pessoa e escreva o valor do desconto do INSS segundo a tabela a seguir: 
+
+Faixa de salário 			Desconto
+até R$ 600,00 				Isento
+de R$ 600,01 até R$ 1200,00 		20%
+de R$ 1200,01 até R$ 2000,00 		25%
+acima de R$ 2000,00 			30% 
+
+x= input("digite o salario")
+x= int(x)
+
+if x>=600.1 and x<= 1200:
+	print(" possui 20% de desconto")
+if x>=1200.01 and 2000:
+	print("possui 25% de desconto")
+if x>2000:
+	print("possui 30% de desconto")
+else:
+	print("é isento")
+
+
+b=(y/x)*100
+print("o percentual de votos brancos é:",b,"%")
+
+22. Sabe-se que a direção de uma determinada escolinha faz a distribuição de seus alunos de acordo com as idades dos mesmos. Dessa forma, os alunos são distribuídos nas seguintes turmas de acordo com a classificação a seguir: 
+Turma 			Faixa de Idade
+Turma A 		de 4 a 5 anos 
+Turma B 		de 6 a 8 anos
+Turma C 		de 9 a 10 anos
+Sem Turmas	abaixo de 4 anos ou acima de 10 anos
+
+Faça um algoritmo que leia a idade de uma criança e informe (escreva) em qual turma a mesma irá ter aulas. O algoritmo deve se preocupar em responder para o usuário que a escolinha não possui turmas para a criança caso a mesma tenha menos que 4 anos ou mais que 10 anos. 
+
+x= input("digite a idade")
+x= float(x)
+
+if x=>4 and x=<5:
+    print("turma A")
+elif x=>6 and x=<8:
+    print("turma B")
+elif x>=9 and x=<10:  
+    print("turma C")
+elif x<4 or x>10:
+    print("sem turmas")
+
+23. Escreva um algoritmo que leia um número inteiro e escreva se ele é ímpar ou par. 
+
+numero = int(input('Digite um inteiro: '))
+
+    if (numero%2) == 0:
+        print("Par")
+    else:
+        print("Ímpar")
+
+
+24. Considerando o sistema de avaliação das médias a seguir, escreva um algoritmo que leia a média de um aluno, e escreva o conceito correspondente e a mensagem: “APROVADO” se o conceito for A, B, ou C e “REPROVADO” se o conceito for D ou E. 
+
+MÉDIA 		CONCEITO
+< 4.0 		E 
+>= 4.0 e < 6.0	D
+>= 6.0 e < 7.5	C
+>= 7.5 e < 9.0 	B
+>= 9.0 		A 
+
+x= input("digite a média do aluno")
+x= float(x)
+
+if x<4:
+    print("conceito E")
+elif x>4.0 and x<6.0:
+    print("conceito D")
+elif x>=6.0 and x<7.5:  
+    print("conceito C")
+elif x>=7.5 and x<9.0:
+    print("conceito B")
+elif x>=9.0:
+    print("conceito A")
+else:
+    print("sem conceito")
+
+25. Faça um algoritmo que leia o ano e escreva se ele é bissexto. Um ano será bissexto se for divisível por 400, ou se for divisível por 4 e não for divisível por 100. 
+
+ano = int(input()) 
+if ano%4== and ano%100!= or ano%400==: 
+	print("Ano Bissexto") 
+else: 
+	print("Não é um ano Bissexto!")
+
+26. Numa certa loja de eletrodomésticos, o comerciário encarregado da seção de televisores recebe mensalmente um salário fixo mais comissão. Essa comissão é calculada em relação ao marca e ao número de televisores vendidos por mês, obedecendo à tabela abaixo: 
+
+Marca 		N° de televisores vendidos 	Comissão por TV vendido 
+1
+Maior ou igual a 10 		R$ 50,00 
+Menor do que 10 		R$ 5,00 
+2
+Maior ou igual a 20 		R$ 20,00	
+Menor do que 20 		R$ 2,00 
+3
+Maior ou igual a 30 		R$ 30,00
+Menor do que 30 		R$ 3,00 
+
+Sabe-se ainda que ele tem um desconto de 8% sobre o seu salário fixo para o INSS. Se o seu salário total (fixo + comissões – INSS) for maior ou igual a 5000,00 ele ainda terá um desconto de 15%, sobre o salário total, relativo ao imposto de renda retido na fonte. Faça um algoritmo que leia o valor do salário fixo, calcule e escreva o salário bruto, os desconto, a comissão e o salário liquido. 
+
+
+
+27. Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores. 
+
+from statistics import mean
+x= input("digite o numero total de eleitores do municipio")
+x= int(x)
+y= input("informe o número de votos brancos")
+y= int(y)
+z= input("informe o número de votos nulos")
+z=int(z)
+a= input("informe o número de votos válidos")
+a=int(a)
+
+b=(y/x)*100
+print("o percentual de votos brancos é:",b,"%")
+c=(z/x)*100
+print("o percentual de votos brancos é:",c,"%")
+d=(a/x)*100
+print("o percentual de votos brancos é:",d,"%")
+
+28. Faça um algoritmo que leia o número do mês e apresente o nome do mês. 
+
+import datetime
+mydate = datetime.datetime.now()
+mydate.strftime("%B")
+
+29. Um vendedor precisa de um algoritmo que calcule o preço total devido por um cliente. O algoritmo deve receber o código de um produto e a quantidade comprada e calcular o preço total, usando a tabela abaixo. Mostre uma mensagem no caso de código inválido. 
+
+Código 		Preço unitário 
+90 		R$ 5,30 
+91 		R$ 6,00 
+112 		R$ 3,20 
+321 		R$ 2,50 
+
+x= input("digite o código do produto")
+x= int(x)
+y= input("digite a quantidade comprada")
+y= int(x)
+
+a=90
+b=91
+c=112
+d=321
+if x=a:
+	pagar=5.3*y
+	print("o valor a pagar é:R$",pagar)
+if x=b:
+	pagar=6.0*y
+	print("o valor a pagar é:R$",pagar)
+if x=c:
+	pagar=3.2*y
+	print("o valor a pagar é:R$",pagar)
+if x=d:
+	pagar=2.5*y
+print("o valor a pagar é:R$",pagar)
+
+30. Elabore um algoritmo que leia um número e informe se ele é divisível por 10, por 5, por 2, ou se não é divisível por nenhum deles.
+
+numero = int(input()) 
+if (numero%10) ==0:
+    print("é divisível por 10")
+elif (numero%5) == 0:
+    print("é divisível por 5")
+elif (numero%2) == 0:
+    print("é divisível por 2")
+else:
+    print("não é divisível por 10, 5 ou 2")
+
+
+
+
+
+
+from statistics import mean
+x= input("informe um valor inteiro")
+x= int(x)
+y=9
+
+if x % y == 0:
+    print('é múltiplo')
+else:
+    print('não é múltiplo')
+
+numeros = ['1', '3', '2', '20', '4', '10', '30']     
+numeros.sort(key=int)
+print(numeros)
+
+numero = int(input('Digite um inteiro: '))
+
+    if (numero%2) == 0:
+        print("Par")
+    else:
+        print("Ímpar")
+
+
+ano = int(input()) 
+if ano%4== and ano%100!= or ano%400==: 
+	print("Ano Bissexto") 
+else: 
+	print("Não é um ano Bissexto!")
+
+
+numero = int(input()) 
+if (numero%10) ==0:
+    print("é divisível por 10")
+elif (numero%5) == 0:
+    print("é divisível por 5")
+elif (numero%2) == 0:
+    print("é divisível por 2")
+else:
+    print("não é divisível por 10, 5 ou 2")
+
+from statistics import mean
+x= input("digite o numero total de eleitores do municipio")
+x= int(x)
+y= input("informe o número de votos brancos")
+y= int(y)
+z= input("informe o número de votos nulos")
+z=int(z)
+a= input("informe o número de votos válidos")
+a=int(a)
+
+b=y/x
+print("o percentual de votos brancos é:",b)
+c=z/x
+print("o percentual de votos brancos é:",c)
+d=a/x
+print("o percentual de votos brancos é:",d)
+
+x= input("digite o numero total de eleitores do municipio")
+x= int(x)
+y= input("informe o número de votos brancos")
+y= int(y)
+z= input("informe o número de votos nulos")
+z=int(z)
+a= input("informe o número de votos válidos")
+a=int(a)
+
+b=(y/x)*100
+print("o percentual de votos brancos é:",b,"%")
+c=(z/x)*100
+print("o percentual de votos brancos é:",c,"%")
+d=(a/x)*100
+print("o percentual de votos brancos é:",d,"%")
+
+
+x= input("digite a média do aluno")
+x= float(x)
+
+if x<4:
+    print("conceito E")
+if x>4.0 and x<6.0:
+    print("conceito D")
+if x>=6.0 and x<7.5:  
+    print("conceito C")
+if x>=7.5 and x<9.0:
+    print("conceito B")
+if x>=9.0:
+    print("conceito A")
+else:
+    print("sem conceito")
+
+x= input("digite o salario")
+x= int(x)
+
+if x>=600.1 and x<= 1200:
+	print(" possui 20% de desconto")
+if x>=1200.01 and 2000:
+	print("possui 25% de desconto")
+if x>2000:
+	print("possui 30% de desconto")
+else:
+	print("é isento")
+
+Instruções
+1) Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+
+nota = -1
+
+while nota < 0 or nota > 10:
+    nota = int(input("Informe a nota: "))
+    if nota < 0 or nota > 10:
+        print("nota inválida")
+    else:
+        print("a nota é:",nota)
+
+2) Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
+
+nome = ""
+senha = ""
+while nome==senha:
+    nome = str(input("digite o nome do usuário"))
+    senha = str(input("digite uma senha"))
+
+    if nome==senha:
+        print("CADASTRO INVÁLIDO")
+    else:
+        print("cadastro realizado com sucesso, Nome:", nome, "Senha:","*****")
+
+3) Faça um programa que leia e valide as seguintes informações:
+
+Idade: entre 0 e 150;
+Salário: maior que zero;
+Sexo: 'f' ou 'm';
+Estado Civil: 's', 'c', 'v', 'd';
+
+idade = int(input("digite a idade entre 0 e 150 anos"))
+salario = int(input("digite o salário maior que zero"))
+sexo = str(input("digite o sexo: f ou m"))
+estado_civil = str(input("digite o estado civil: s, c, v ou d"))
+if idade <0 or idade >0
+	idade = int(input("digite a idade entre 0 e 150 anos"))
+elif salario <0
+	salario = int(input("digite o salário maior que zero"))
+elif sexo !f or sexo !m
+sexo = str(input("digite o sexo: f ou m"))
+elif estado_civil !s or estado_civil !c or estado_civil !v or estado_civil !d
+	estado_civil = str(input("digite o estado civil: s, c, v ou d"))
+else:
+print("idade",idade,"\nsalario R$:",salario,"\nsexo:",sexo,"\nestado civil:",estado_civil)
+
+4) Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
+
+populacao_A,populacao_B,anos  = 80000, 200000, 0
+taxa_de_crescimento_A,taxa_de_crescimento_B = 0.03, 0.015
+while populacao_A < populacao_B:
+    anos += 1
+    populacao_A = populacao_A + (populacao_A * taxa_de_crescimento_A)
+    populacao_B = populacao_B + (populacao_B * taxa_de_crescimento_B)
+    if populacao_A >= populacao_B:   
+        print('Em %d anos a populacao A ultrapassará a populacao B' % anos) 
+        print('Quantidade da populacao A e %r' % populacao_A)
+        print('Quantidade da populacao B e %r' % populacao_B)
+
+
+5) Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais. Valide a entrada e permita repetir a operação.
+
+
+populacao_A = int(input("digite a populacao A"))
+populacao_B = int(input("digite a populacao B"))
+anos  = 0
+taxa_de_crescimento_A = float(input("digite a taxa de A"))
+taxa_de_crescimento_B = float(input("digite a taxa de B"))
+while populacao_A < populacao_B:
+    anos += 1
+    populacao_A = populacao_A + (populacao_A * taxa_de_crescimento_A)
+    populacao_B = populacao_B + (populacao_B * taxa_de_crescimento_B)
+    if populacao_A >= populacao_B:   
+        print('Em %d anos a populacao A ultrapassará a populacao B' % anos) 
+        print('Quantidade da populacao A e %r' % populacao_A)
+        print('Quantidade da populacao B e %r' % populacao_B)
+
+Exercícios de Fixação
+1) Calcule e mostre a tabuada do 17.
+
+def tabuada(x):
+    for cont in range(1,11):
+        print('{0} x {1} = {2}'.format(x,cont,x*cont))
+
+if __name__=='__main__':
+    num = 17
+    tabuada(num)
+
+2) Ler do teclado uma lista com 6 inteiros e imprimir True se a lista estiver ordenada de forma crescente ou False caso contrário.
+
+A=[]
+B=[]
+C=[]
+while len(A)!=6:
+    A.append(input("digite um numero inteiro"))
+    B=A
+    C=B
+    A.sort()
+print(A==C)
+
+3) Exiba em ordem decrescente todos os números de 500 até 10.
+
+A=list(range(10,500+1,1))
+A.sort(reverse=True)
+A
+
+4) Ler do teclado uma lista com 10 números e imprima a quantidade de números entre 10 e 50.
+
+A=[]
+N=0
+while len(A)!=10:
+    A.append(input("digite um numero inteiro"))
+while N!=10:
+    if A[n]>10 and A[n]<50:
+        print(A[N])
+        N=+1
+    else:
+        break
+print(A)
+5) Ler do teclado uma lista com 6 inteiros e imprimir o menor valor.
+A=[]
+while len(A)!=6:
+    A.append(input("digite um numero inteiro"))
+print("o menor valor da lista é:",min(A))
+
+Fazer um programa que escreva a representação em algarismos romanos de um número inteiro positivo, até 3000.	
+O usuário deve entrar com um número (input)
+	O resultado deve ser impresso no console (print)
+Exemplo de execução:
+Entre com um número positivo: 1985
+	Em algarismos romanos: MCMLXXXV
+
+Def converter(number):
+	Numerais = [1000,900,500,400,100,90,50,40,10,9,5,4,1]
+	Romanos =[“M”,”CM”,”D”,”CD”,”C”,”XC”,”L”,”XL”,”X”,”IX”,”V”,”IV”,”I”]
+	Res=’’
+	For i in range(len(numerais)):
+		while number >= numerais[i]:
+		res += romanos[i]
+	return res
+
+entrada = 1985
+saida = converter(entrada)
+print(‘{0}={1}’.format(entrada,saída))
+1985=MCMSLXXXV
+
+
